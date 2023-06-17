@@ -12,6 +12,7 @@ body {
 nav ul li {
   background-color: #ffffff;
   list-style-type: none;
+  
 }
 
 .top {
@@ -35,6 +36,7 @@ nav ul li {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #000;
+  text-align: center;
 }
 
 .studio {
@@ -50,6 +52,7 @@ nav ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  text-decoration: none;
 }
 
 .portofolio {
@@ -58,7 +61,7 @@ nav ul li {
   height: 16px;
   left: 545px;
   top: 24px;
-
+text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -81,6 +84,7 @@ nav ul li {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  text-decoration: none;
 }
 
 header .mail {
@@ -95,6 +99,8 @@ header .mail {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
 }
 header .phone {
   position: absolute;
@@ -109,6 +115,7 @@ header .phone {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
 }
 
 header .mail:hover,
@@ -138,7 +145,7 @@ span {
   height: 600px;
   left: 0px;
   top: 80px;
-
+width: 100%;
   background: #2f303a;
 }
 
@@ -156,6 +163,7 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  
 }
 
 .btnReq {
@@ -193,15 +201,15 @@ top: 969px;
   height: 84px;
   left: 671.92px;
   top: 969px;
-
+  text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  justify-content: 
-  letter-spacing: 0.03em;
-
+  width: 100%;
+  letter-spacing: 0.03rem;
+  
   color: #212121;
 }
 
@@ -228,7 +236,7 @@ font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
-display: inline;
+width: 100%;
 
 
 }
@@ -236,6 +244,14 @@ display: inline;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+}
+
+.card { 
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+text-align: center;
+
 }
 
 .group1 {
@@ -256,15 +272,24 @@ footer {
   height: 251px;
   left: 0px;
   top: 2097px;
-
+  
   background: #2f303a;
 }
+
+
+
 footer h2 {
   color: white;
+  
 }
 
 footer ul li a {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
 }
 
 .address {
@@ -274,9 +299,10 @@ footer ul li a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-
+text-decoration: none;
   color: #ffffff;
 }
+
 
 /* Portofolio */
 
@@ -286,12 +312,23 @@ width: 1170px;
 height: 1360px;
 left: 215px;
 top: 128px;
+
 }
 
 .project1 ul li {
   list-style-type: none;
   display: inline;
-  border: ;
+  
+}
+.project1 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: ce ;
+}
+
+.project1 p{
+  color: #757575;
 }
 
 .filter1 {
@@ -380,9 +417,4 @@ section .filter1 .btnMarketing:focus {
   color:white
 }
 
-.project1 ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-}
 
