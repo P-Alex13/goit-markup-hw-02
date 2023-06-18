@@ -3,24 +3,26 @@ body {
   position: relative;
   width: 1600px;
   height: 2348px;
-
+  height: 100%;
   background: #ffffff;
 }
 
 /* nav bar + mail + phone*/
 
-nav ul li {
+nav ul {
   background-color: #ffffff;
   list-style-type: none;
-  
+  display: flex;
 }
 
 .top {
-  position: absolute;
   width: 1600px;
   height: 80px;
   left: 0px;
   top: -8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .web {
@@ -61,7 +63,7 @@ nav ul li {
   height: 16px;
   left: 545px;
   top: 24px;
-text-decoration: none;
+  text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -145,7 +147,7 @@ span {
   height: 600px;
   left: 0px;
   top: 80px;
-width: 100%;
+  width: 100%;
   background: #2f303a;
 }
 
@@ -163,20 +165,20 @@ width: 100%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  
 }
 
 .btnReq {
   position: absolute;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
-color: #ffffff;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 .what-we-do ul {
@@ -186,17 +188,14 @@ border: none;
 }
 
 .what-we-do {
-  
-position: absolute;
-width: 1100px;
-height: 386px;
-left: 215px;
-top: 969px;
-
+  position: absolute;
+  width: 1100px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
 }
 
 .what-we-do h2 {
-  
   width: 186.15px;
   height: 84px;
   left: 671.92px;
@@ -209,36 +208,33 @@ top: 969px;
   line-height: 42px;
   width: 100%;
   letter-spacing: 0.03rem;
-  
+
   color: #212121;
 }
 
 .our-team {
- position: absolute;
-width: 1600px;
-height: 648px;
-left: 0px;
-top: 1449px;
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
 
-background: #F5F4FA;
+  background: #f5f4fa;
 }
 
-
 .our-team h2 {
- width: 165px;
-height: 42px;
-left: 718px;
-top: 1543px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-width: 100%;
-
-
+  width: 165px;
+  height: 42px;
+  left: 718px;
+  top: 1543px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 100%;
 }
 .our-team ul {
   list-style-type: none;
@@ -246,12 +242,12 @@ width: 100%;
   justify-content: space-evenly;
 }
 
-.card { 
-  background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-text-align: center;
-
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .group1 {
@@ -264,23 +260,18 @@ text-align: center;
   align-items: center;
 }
 
-
-
 footer {
   position: absolute;
   width: 1600px;
   height: 251px;
   left: 0px;
   top: 2097px;
-  
+
   background: #2f303a;
 }
 
-
-
 footer h2 {
   color: white;
-  
 }
 
 footer ul li a {
@@ -299,35 +290,29 @@ footer ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-text-decoration: none;
+  text-decoration: none;
   color: #ffffff;
 }
-
 
 /* Portofolio */
 
 .container {
   position: absolute;
-width: 1170px;
-height: 1360px;
-left: 215px;
-top: 128px;
-
+  width: 1170px;
+  height: 1360px;
+  left: 215px;
+  top: 128px;
+  height: 100%;
 }
 
-.project1 ul li {
-  list-style-type: none;
-  display: inline;
-  
-}
 .project1 ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: ce ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
-.project1 p{
+.project1 p {
   color: #757575;
 }
 
@@ -337,23 +322,24 @@ top: 128px;
   height: 38px;
   left: 542px;
   top: 128px;
+
+  
 }
 .btn-active {
   border: none;
   border-radius: 4px;
   width: 64px;
   height: 38px;
- 
+  cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  }
+}
 
 section .filter1 .btn-active:hover,
 section .filter1 .btn-active:focus {
   background-color: #2196f3;
-  color:white
-
+  color: white;
 }
 .btnWeb {
   background: #f5f4fa;
@@ -363,58 +349,59 @@ section .filter1 .btn-active:focus {
   left: 614px;
   top: 128px;
   border: none;
+  cursor: pointer;
 }
 
 section .filter1 .btnWeb:hover,
 section .filter1 .btnWeb:focus {
   background-color: #2196f3;
-  color:white
+  color: white;
 }
 
-.btnApps{
-        width: 83px;
-height: 38px;
-left: 742px;
-top: 128px;
-border: none;
-background: #F5F4FA;
-border-radius: 4px;
+.btnApps {
+  width: 83px;
+  height: 38px;
+  left: 742px;
+  top: 128px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
 }
 section .filter1 .btnApps:hover,
 section .filter1 .btnApps:focus {
   background-color: #2196f3;
-  color:white
+  color: white;
 }
 
-.btnDesign{
-        width: 96px;
-height: 38px;
-left: 833px;
-top: 128px;
-border: none;
-background: #F5F4FA;
-border-radius: 4px;
+.btnDesign {
+  width: 96px;
+  height: 38px;
+  left: 833px;
+  top: 128px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
 }
 section .filter1 .btnDesign:hover,
 section .filter1 .btnDesign:focus {
   background-color: #2196f3;
-  color:white
+  color: white;
 }
 
-
-.btnMarketing{
-        width: 121px;
-height: 38px;
-left: 937px;
-top: 128px;
-border: none;
-background: #F5F4FA;
-border-radius: 4px;
+.btnMarketing {
+  width: 121px;
+  height: 38px;
+  left: 937px;
+  top: 128px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
 }
 section .filter1 .btnMarketing:hover,
 section .filter1 .btnMarketing:focus {
   background-color: #2196f3;
-  color:white
+  color: white;
 }
-
-
