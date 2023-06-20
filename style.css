@@ -24,7 +24,7 @@ display: inline;
 
 padding: .5em;
 text-decoration: none;
-color: #212121;
+
 }
 
 .main-nav{
@@ -45,19 +45,20 @@ top: -3px;
 background: #FFFFFF;
 }
 
-.nav .web{
+.web{
 font-family:'raleway';
 font-style: normal;
 font-weight: 700;
 font-size:26px;
 line-height: 31px;
 letter-spacing: 0.03em;
-position:absolute;
+position:relative;
 width: 145px;
 height: 31px;
 left: 215px;
-top: 16px;
+top: 6px;
 margin:0;
+color: rgb(0, 0, 0);
 }
 
 .line{     /* This is how i think we need to do for that line  */
@@ -179,17 +180,16 @@ height: 600px;
 left: 0px;
 top: 80px;
 background: #2F303A;
-margin: 0;
-padding: 0;
 }
 
-.title-container{
-    position: absolute;
-width: 696px;
-height: 120px;
-left: 452px;
-top: 280px;
+.group-container h2{
+  margin-top:-50px;
 }
+
+.group-container button{
+  margin-top:-50px;
+}
+
 
 .title{
 font-family: 'Roboto';
@@ -258,14 +258,18 @@ position: absolute;
 width: 1100px;
 height: 101px;
 left: 215px;
-top: 774px;
+margin-top: 774px;
 display: flex;
+width: 50%;
+margin-left: 60px;
 
 }
 
+
+
+
 .main-group1 p{
 color: #757575;   
-margin:10px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -276,8 +280,8 @@ color: #757575;
 }
 
 .main-group1 h3{
-    color:#212121;
-    width: 253.85px;
+color:#212121;
+width: 253.85px;
 height: 16px;
 top: 774px;
 font-family: 'Roboto';
@@ -308,20 +312,23 @@ text-transform: uppercase;
   top: 969px;
 }
 
-.what-we-do h2 {
-  
-  left: 671.92px;
+.whatwedo-title h2 {
+  width: 100%;
+  left: 701px;
   top: 969px;
-  text-align: center;
+ text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  width: 100%;
   letter-spacing: 0.03rem;
   color: #212121;
+  
 }
+
+
+
 
 /* Our Team Section*/
 
@@ -366,6 +373,10 @@ background: #F5F4FA;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   
 }
 
@@ -375,13 +386,29 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
-text-align: center;
+
 letter-spacing: 0.03em;
 color: #757575;
+margin-top:5px;
 }
 
-
-
+.our-team h4{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom:5px;
+color: #212121;
+}
+.container-card1 , 
+.container-card2 , 
+.container-card3 ,
+.container-card4  {
+  padding-bottom: 20px;
+}
 /* Footer Section */
 
 .main-footer {
@@ -435,7 +462,7 @@ color: #FFFFFF;
 }
 
 
-aside h2{
+aside  {
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -443,9 +470,13 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 color: #ffffff;
-display: flex;
-}
+margin-left:215px;
+margin-top: 60px;
 
+}
+.main-footer li {
+  margin-left: -30px;
+}
 
 
 
@@ -457,51 +488,57 @@ width: 1170px;
 height: 1360px;
 left: 215px;
 top: 128px;
-
 }
 
 .project ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style-type: none;
+  margin-top:200px;
+  
+  
   
   
 }
-.project1{
+.project1 {
+
 box-sizing: border-box;
 width: 370px;
 height: 404px;
 left: 215px;
-top: calc(50% - 404px/2 - 521.5px);
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
-margin-bottom:30px;
-margin-right:;
+margin-bottom: 30px;
+
 }
+
+
 
 .project p {
   color: #757575;
 }
 
-.filter1 {
+section .filter1 {
   position: absolute;
-  width: 516px;
-  height: 38px;
-  left: 542px;
-  top: 128px;
-
-  
+  width: 100%;
+  left: 0;
+  top: 50px; 
+  text-align: center;
 }
+
+
+
 .btn-active {
   border: none;
   border-radius: 4px;
   width: 64px;
   height: 38px;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  background: #2196F3;
+  color:#FFFFFF ;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 section .filter1 .btn-active:hover,
